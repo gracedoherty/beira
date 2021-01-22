@@ -73,3 +73,20 @@ index,stnode,endnode,road,h_before,h_after
 11352,8254257032,8254273894,5A,pedestrian_road,access_works
 11231,8252830401,8252830402,6a,pedestrian_road,access_works
 11354,8252830409,8252830402,6a,pedestrian_road,access_works
+1684,,,b_B,pv_before,pv_after
+7787,,,b_C,nothing,pv_after
+10452,,,b_D,p_before,pv_after
+8074,,,b_E,p_before,p_after
+4127,,,b_H,p_before,p_after
+1450,,,b_L,pv_before,pv_after
+7420,,,b_M,p_before,p_after
+11105,,,b_O,p_before,p_after
+5300,,,b_Q,p_before,p_after
+11050,,,b_T,p_before,pv_after
+7436,,,b_V,p_before,pv_after
+8146,,,b_Z,p_before,p_after
+7454,,,b_AB,pv_before,pv_after
+11128,,,b_AC,p_before,p_after
+11232,,,b_AD ,p_before,pv_after
+11351,,,b_AE,p_before,p_after
+10459,,,b_D,p_before,pv_after
