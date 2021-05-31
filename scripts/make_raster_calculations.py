@@ -81,18 +81,27 @@ def get_driver_save_file(thing_name, cols, rows, tif_files, fin_arr):
     if driver is None:
         print ('Could not create driver :(')
 
-    outDs = driver.Create(tiff_path + thing_name + "_out.tif", cols, rows, 1, gdal.GDT_Int32)
+    outDs = driver.Create(tiff_path + thing_name + "_out.tif", cols, rows, 1, gdal.GDT_Float32)
+
+
 
     if outDs is None:
         print ('Could not create outputfile :(')
 
-    outDs.SetGeoTransform(indDs.GetGeoTransform())
-    outDs.SetProjection(indDs.GetProjection())
+
     outBand = outDs.GetRasterBand(1)
     outBand.WriteArray(fin_arr[thing_name], 0, 0)
     outBand.FlushCache()
     outBand.SetNoDataValue(-99999)
+
+    outDs.SetGeoTransform(indDs.GetGeoTransform())
+    outDs.SetProjection(indDs.GetProjection())
+    
     outDs = None
+
+    del outDs
+
+
 
 
 if __name__ == "__main__":
