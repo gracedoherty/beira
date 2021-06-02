@@ -1,0 +1,11 @@
+*.shp
+*.csv
+*.xlsx
+*.cpg
+*.dbf
+*.shx
+*.geojson
+*.zip
+*.tiff
+data/
+new_info/
